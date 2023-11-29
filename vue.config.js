@@ -13,7 +13,7 @@ module.exports = defineConfig({
         client: {
             overlay: false
         },
-        public: 'http://localhost:8081/'
+        allowedHosts: 'http://localhost:8081/'
     }
     })
 
