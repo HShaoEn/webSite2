@@ -163,18 +163,20 @@
     const whichTab = ref(1)
     const tablist = [
         {
-            label: "First",
+            label: "Front",
             name: 1
         },
         {
-            label: "two",
+            label: "Backend",
             name: 2
         },
         {
-            label: "three",
+            label: "Database",
             name: 3
         }
     ]
+
+
     // ¤À²Õ
     const tabnews = computed(() =>
         _.groupBy(newslist.value, item => item.category)
