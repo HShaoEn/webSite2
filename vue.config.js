@@ -1,5 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
+    publicPath: '',
     transpileDependencies: true,
     // 跨域問題 反向代理
     devServer: {
@@ -13,9 +14,7 @@ module.exports = defineConfig({
         client: {
             overlay: false
         },
-        allowedHosts: process.env.NODE_ENV === 'production'
-            ? 'https://your-production-domain/'
-            : 'http://localhost:8080/'
+        allowedHosts: 'all'
     }
     })
 
